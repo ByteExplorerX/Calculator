@@ -22,7 +22,7 @@ python calculator.py
 * Select an operation by inputting the relevant number.
 * When prompts ask for input, offer it as indicated.
 * The outcome of the selected operation will be shown by the program.
-* Follow the directions displayed on the screen if you wish to do                                                                                                                              another procedure. Select the 'exit' option to close the program.
+* Follow the directions displayed on the screen if you wish to do another procedure. Select the 'exit' option to close the program.
 
 4. Error Handling
 * The program is made to deal with mistakes. Read the error messages carefully for help if you run into any problems.
@@ -32,9 +32,4 @@ Features
 Arithmetic Operations: Addition, Subtraction, Multiplication, Division.
 Logical Operations: Comparisons, Logical OR, Logical AND, Logical XOR.
 Additional Functionalities: Modulus Calculation, Factorial Calculation.
-
-         
-
-Made by: Juri Dedej
-
 
