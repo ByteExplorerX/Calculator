@@ -63,36 +63,32 @@ def main():
             input(message)
         elif user_choice == "5":
             # Comparisons
-            comparison = input("Enter your comparison: ")
-            try:
-                num1, operator, num2 = comparison.split()
-                num1, num2 = float(num1), float(num2)
-                result = compare_numbers(num1, num2)
-                print(result)
-                print()
-                input(message)
-            except ValueError:
-                print("Invalid input. Please enter a valid comparison.")
+            num1 = float(input("Enter a number: "))
+            num2 = float(input("Enter the second number: "))
+            result = compare_numbers(num1, num2)
+            print(result)
+            print()
+            input(message)
         elif user_choice == "6":
             # Logical OR Operation
-            val1 = int(input("Enter the first value (True or False): "), base=2)
-            val2 = int(input("Enter the second value (True or False): "), base=2)
+            val1 = int(input("Enter the first value (True [1] or False [0]): "), base=2)
+            val2 = int(input("Enter the second value (True [1] or False [0]): "), base=2)
             result = logical_or_operation(val1, val2)
             print(f"The result of logical OR operation is: {result}")
             print()
             input(message)
         elif user_choice == "7":
             # Logical AND Operation
-            val1 = int(input("Enter the first value (True or False): "), base=2)
-            val2 = int(input("Enter the second value (True or False): "), base=2)
+            val1 = int(input("Enter the first value (True [1] or False [0]): "), base=2)
+            val2 = int(input("Enter the second value (True [1] or False [0]): "), base=2)
             result = logical_and_operation(val1, val2)
             print(f"The result of logical AND operation is: {result}")
             print()
             input(message)
         elif user_choice == "8":
             # Logical XOR Operation
-            val1 = int(input("Enter the first value (True or False): "), base=2)
-            val2 = int(input("Enter the second value (True or False): "), base=2)
+            val1 = int(input("Enter the first value (True [1] or False [0]): "), base=2)
+            val2 = int(input("Enter the second value (True [1] or False [0]): "), base=2)
             result = logical_xor_operation(int(val1), int(val2))
             print(f"The result of logical XOR operation is: {result}")
             print()
@@ -116,8 +112,8 @@ def main():
             # Exit
             break            
         else:
-            print("Not valid. Returning to the menu")
-            time.sleep(2)  
+            print("Please enter a valid number. Returning to the menu...")
+            time.sleep(2.5)  
             
 # Addition:
 def add_numbers(num1, num2):
